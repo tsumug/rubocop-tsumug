@@ -1,4 +1,6 @@
-require "rubocop/tsumug/version"
+# frozen_string_literal: true
+
+require 'rubocop/tsumug/version'
 
 module RuboCop
   module Tsumug
@@ -11,4 +13,3 @@ module RuboCop
     private_constant(:CONFIG_DEFAULT, :PROJECT_ROOT)
   end
 end
-
