@@ -1,1 +1,44 @@
-# Write it!
+require:
+  - "rubocop-performance"
+  - "rubocop-rails"
+  - "rubocop-rspec"
+
+inherit_gem:
+  onkcop:
+    - "config/rubocop.yml"
+    - "config/rails.yml"
+    - "config/rspec.yml"
+
+AllCops:
+  TargetRubyVersion: 2.6
+  Exclude:
+    - "bin/*"
+    - "log/**/*"
+    - "public/**/*"
+    - "tmp/**/*"
+    - "vendor/**/*"
+
+Naming/FileName:
+  Exclude:
+    - "db/Schemafile.rb"
+
+Metrics/ClassLength:
+  Max: 300
+
+Metrics/MethodLength:
+  Max: 30
+
+Metrics/AbcSize:
+  Max: 30
+
+Rails/DynamicFindBy:
+  Enabled: false
+
+Rails/SaveBang:
+  Enabled: false
+
+RSpec/ExampleLength:
+  Max: 20
+
+RSpec/MultipleExpectations:
+  Enabled: false
