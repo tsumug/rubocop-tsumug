@@ -1,15 +1,13 @@
 # Rubocop::Tsumug
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/rubocop/tsumug`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
-
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
 gem 'rubocop-tsumug', require: false
+# Install the fork
+gem "onkcop", require: false, github: "sue445/onkcop", branch: "develop"
 ```
 
 And then execute:
@@ -22,7 +20,32 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+.rubocop.yml:
+
+```yaml
+inherit_gem:
+  rubocop-tsumug:
+    - "config/default.yml"
+```
+
+sider.yml:
+
+```yaml
+linter:
+  rubocop:
+    gems:
+      - name: "onkcop"
+        git:
+          repo: "https://github.com/sue445/onkcop.git"
+          branch: "develop"
+      - name: "rubocop-tsumug"
+        git:
+          repo: "https://github.com/tsumug/rubocop-tsumug.git"
+          branch: "master"
+      - "rubocop-performance"
+      - "rubocop-rails"
+      - "rubocop-rspec"
+```
 
 ## Development
 
@@ -32,7 +55,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/rubocop-tsumug.
+Bug reports and pull requests are welcome on GitHub at https://github.com/tsumug/rubocop-tsumug.
 
 
 ## License
