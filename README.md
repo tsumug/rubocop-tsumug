@@ -5,7 +5,8 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'rubocop-tsumug', require: false
+gem "rubocop", require: false
+gem "rubocop-tsumug", require: false
 # Install the fork
 gem "onkcop", require: false, github: "sue445/onkcop", branch: "develop"
 ```
