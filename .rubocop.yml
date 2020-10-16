@@ -4,3 +4,9 @@ AllCops:
 Naming/FileName:
  Exclude:
    - lib/rubocop-tsumug.rb
+
+Style/AsciiComments:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
