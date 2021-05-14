@@ -37,6 +37,9 @@ Metrics/MethodLength:
 Rails/DynamicFindBy:
   Enabled: false
 
+Rails/EnvironmentVariableAccess:
+  AllowReads: true
+
 Rails/SaveBang:
   Enabled: false
 
