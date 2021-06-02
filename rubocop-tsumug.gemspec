@@ -30,7 +30,4 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'rubocop-performance'
   spec.add_runtime_dependency 'rubocop-rails'
   spec.add_runtime_dependency 'rubocop-rspec'
-
-  # GitHub のリポジトリを指定することはできないため、各プロジェクトでインストールする
-  # spec.add_runtime_dependency 'onkcop'
 end

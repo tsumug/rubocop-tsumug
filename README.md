@@ -7,8 +7,6 @@ Add this line to your application's Gemfile:
 ```ruby
 gem "rubocop", require: false
 gem "rubocop-tsumug", require: false
-# Install the fork
-gem "onkcop", require: false, github: "sue445/onkcop", branch: "develop"
 ```
 
 And then execute:
@@ -35,10 +33,6 @@ sider.yml:
 linter:
   rubocop:
     gems:
-      - name: "onkcop"
-        git:
-          repo: "https://github.com/sue445/onkcop.git"
-          branch: "develop"
       - name: "rubocop-tsumug"
         git:
           repo: "https://github.com/tsumug/rubocop-tsumug.git"

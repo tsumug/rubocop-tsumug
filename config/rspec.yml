@@ -1,0 +1,26 @@
+RSpec/ContextWording:
+  Enabled: false
+
+RSpec/DescribedClass:
+  EnforcedStyle: explicit
+
+RSpec/EmptyLineAfterFinalLet:
+  Enabled: false
+
+RSpec/ExampleLength:
+  Max: 20
+
+RSpec/ExpectChange:
+  EnforcedStyle: block
+
+RSpec/MultipleExpectations:
+  Enabled: false
+
+RSpec/MultipleMemoizedHelpers:
+  Enabled: false
+
+RSpec/NamedSubject:
+  Enabled: false
+
+RSpec/NestedGroups:
+  Max: 4

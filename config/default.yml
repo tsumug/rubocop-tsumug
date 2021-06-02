@@ -3,51 +3,7 @@ require:
   - "rubocop-rails"
   - "rubocop-rspec"
 
-inherit_gem:
-  onkcop:
-    - "config/rubocop.yml"
-    - "config/rails.yml"
-    - "config/rspec.yml"
-
-AllCops:
-  NewCops: enable
-  Exclude:
-    - "bin/*"
-    - "log/**/*"
-    - "public/**/*"
-    - "tmp/**/*"
-    - "vendor/**/*"
-
-Naming/FileName:
-  Exclude:
-    - "db/Schemafile.rb"
-
-Lint/MixedRegexpCaptureTypes:
-  Enabled: false
-
-Metrics/AbcSize:
-  Max: 30
-
-Metrics/ClassLength:
-  Max: 300
-
-Metrics/MethodLength:
-  Max: 30
-
-Rails/DynamicFindBy:
-  Enabled: false
-
-Rails/EnvironmentVariableAccess:
-  AllowReads: true
-
-Rails/SaveBang:
-  Enabled: false
-
-RSpec/ExampleLength:
-  Max: 20
-
-RSpec/MultipleExpectations:
-  Enabled: false
-
-RSpec/MultipleMemoizedHelpers:
-  Enabled: false
+inherit_from:
+  - "rubocop.yml"
+  - "rails.yml"
+  - "rspec.yml"

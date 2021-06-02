@@ -1,0 +1,14 @@
+Rails/DynamicFindBy:
+  Enabled: false
+
+Rails/EnvironmentVariableAccess:
+  AllowReads: true
+
+Rails/FilePath:
+  Enabled: false
+
+Rails/Present:
+  Enabled: false
+
+Rails/SaveBang:
+  Enabled: false
